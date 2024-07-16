@@ -3,6 +3,7 @@ from flask import jsonify
 import os
 from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPermissions
 from datetime import datetime, timedelta
+import subprocess
 
 # File Imports
 import config
@@ -13,12 +14,15 @@ class Services:
   def __init__(self) -> None:
     self.mongodb = MongoDB()
     self.queue = Queue()
+    self.local_audio_path_generic = ""
+    self.local_audio_path_wav = "audios/audio.wav"
   
   """
   - Connect to blob storage
-  - Save the file in fs
+  - Save the incoming file in fs
+  - Convert it to .wav format
   - Upload it into blob
-  - Remove it from fs
+  - Remove files from fs
   - Generate shareable blob url
   - Push {blob_url, project_id, txion_status, uuid} to DB
   - Push {blob_url, uuid} to queue
@@ -31,13 +35,6 @@ class Services:
     blob_service_client = BlobServiceClient.from_connection_string(connection_string)
     container_client = blob_service_client.get_container_client(container_name)
     print('Connected to blob storage ...')
-    
-    def upload_file_to_container(file_path, blob_name):
-      with open(file_path, "rb") as data:
-        print("Uploading audio file ...")
-        container_client.upload_blob(name=blob_name, data=data)
-      print(f"Uploaded {file_path} to {blob_name} in the container {container_name}")
-    
 
     form_data = request.form
     file = request.files.get('file')
@@ -47,15 +44,32 @@ class Services:
       return jsonify({"status": 500, "message": "No file is found"})
     
     # - Save the file in fs
-    formatted_filename_for_fs = file.filename.replace(" ", "_").replace("/", "_")
-    file.save(formatted_filename_for_fs)
-    formatted_filename_for_blob = project_id + "/" + file.filename
+    self.local_audio_path_generic = file.filename.replace(" ", "_").replace("/", "_")
+    splitted_filename = file.filename.split(".")
+    splitted_filename = splitted_filename[0:-1]
+    formatted_filename_for_blob = project_id + "/" + "".join(splitted_filename) + ".wav"
+    
+    file.save(self.local_audio_path_generic)
+    
+    # - Convert it into wav
+    def convert_audio_to_wav():
+      command = ["ffmpeg", "-i", self.local_audio_path_generic, self.local_audio_path_wav]
+      subprocess.run(command, check=True)
+      
+    convert_audio_to_wav()
     
     # - Upload it into blob
-    upload_file_to_container(formatted_filename_for_fs, formatted_filename_for_blob)
+    def upload_file_to_container(file_path, blob_name):
+      with open(file_path, "rb") as data:
+        print("Uploading audio file ...")
+        container_client.upload_blob(name=blob_name, data=data)
+      print(f"Uploaded {file_path} to {blob_name} in the container {container_name}")
     
-    # - Remove it from fs
-    os.remove(formatted_filename_for_fs)
+    upload_file_to_container(self.local_audio_path_wav, formatted_filename_for_blob)
+    
+    # - Remove files from fs
+    os.remove(self.local_audio_path_generic)
+    os.remove(self.local_audio_path_wav)
     
     # - Generate shareable blob url
     sas_token = generate_blob_sas(
