@@ -1,6 +1,5 @@
 # Package Imports
 from pymongo import MongoClient
-import os
 
 # File Imports
 import config

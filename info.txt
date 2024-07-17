@@ -1,1 +1,7 @@
 flask --app app.py --debug run
+
+FILE STATES
+- UPLOADED
+- TRANSCRIBING
+- ANALYZING
+- COMPLETED

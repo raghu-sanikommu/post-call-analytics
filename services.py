@@ -87,7 +87,7 @@ class Services:
     db_record_inserted = self.mongodb.insert_one(record={
       "projectId": project_id,
       "blobUrl": blob_url,
-      "transcriptionStatus": "PENDING",
+      "status": "UPLOADED",
     })
     print(f"Record inserted in DB :: {db_record_inserted.inserted_id}")
     
