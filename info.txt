@@ -5,3 +5,729 @@ FILE STATES
 - TRANSCRIBING
 - ANALYZING
 - COMPLETED
+
+https://platform.openai.com/docs/api-reference/audio/verbose-json-object
+https://platform.openai.com/docs/api-reference/audio/createTranscription
+
+
+06_00.opus:
+blob url = https://ftrgp01blobstore.blob.core.windows.net/b-audios-to-transcribe/proj_81/06_00.opus?se=2024-07-18T09%3A01%3A04Z&sp=r&sv=2024-05-04&sr=b&sig=7TNlKYxx%2Bxsf9WR%2BZ1TiwGZ7fXMsSxsBrhaptBz0qQY%3D
+_id = 6698cbc0318aaa081097e59b
+projectId = proj_81
+transcription = {
+    "segments" : [
+        {
+            "id" : 0,
+            "start" : 0.0,
+            "end" : 5.559999942779541,
+            "text" : "Thank you for calling Questron, this is Candice, how may I help you?"
+        },
+        {
+            "id" : 1,
+            "start" : 5.559999942779541,
+            "end" : 8.279999732971191,
+            "text" : "I still have not received my order."
+        },
+        {
+            "id" : 2,
+            "start" : 8.279999732971191,
+            "end" : 13.319999694824219,
+            "text" : "You said I would receive it on the 20th, it's on the 22nd, still nothing."
+        },
+        {
+            "id" : 3,
+            "start" : 13.319999694824219,
+            "end" : 17.719999313354492,
+            "text" : "I don't know what's going on, but if it's not too much of a bother to you, I would really"
+        },
+        {
+            "id" : 4,
+            "start" : 17.719999313354492,
+            "end" : 19.899999618530273,
+            "text" : "really now love to get what I paid for."
+        },
+        {
+            "id" : 5,
+            "start" : 19.899999618530273,
+            "end" : 20.899999618530273,
+            "text" : "You know what I mean?"
+        },
+        {
+            "id" : 6,
+            "start" : 20.899999618530273,
+            "end" : 25.520000457763672,
+            "text" : "Oh, if it's beyond the promised delivery date, we definitely need to look into that."
+        },
+        {
+            "id" : 7,
+            "start" : 25.520000457763672,
+            "end" : 28.280000686645508,
+            "text" : "May I have your order number and your full name so I can check for you?"
+        },
+        {
+            "id" : 8,
+            "start" : 28.68000030517578,
+            "end" : 32.400001525878906,
+            "text" : "That's exactly what I'm thinking, like, I don't understand, what's taking so long?"
+        },
+        {
+            "id" : 9,
+            "start" : 32.400001525878906,
+            "end" : 40.439998626708984,
+            "text" : "Anyway, the order number is 498-4977 and my name is Tabitha Ratched."
+        },
+        {
+            "id" : 10,
+            "start" : 40.439998626708984,
+            "end" : 41.599998474121094,
+            "text" : "Thank you, Tabitha."
+        },
+        {
+            "id" : 11,
+            "start" : 41.599998474121094,
+            "end" : 45.400001525878906,
+            "text" : "I will now go ahead and pull up your order and hopefully I can give you an immediate"
+        },
+        {
+            "id" : 12,
+            "start" : 45.400001525878906,
+            "end" : 46.400001525878906,
+            "text" : "answer."
+        },
+        {
+            "id" : 13,
+            "start" : 46.400001525878906,
+            "end" : 48.20000076293945,
+            "text" : "One moment, please."
+        },
+        {
+            "id" : 14,
+            "start" : 48.20000076293945,
+            "end" : 50.68000030517578,
+            "text" : "Go ahead, thank you."
+        },
+        {
+            "id" : 15,
+            "start" : 50.68000030517578,
+            "end" : 56.959999084472656,
+            "text" : "Okay, like what she said, the estimated delivery date is on the 20th."
+        },
+        {
+            "id" : 16,
+            "start" : 57.20000076293945,
+            "end" : 60.31999969482422,
+            "text" : "It's not 22nd, so it's two days late."
+        },
+        {
+            "id" : 17,
+            "start" : 60.31999969482422,
+            "end" : 65.16000366210938,
+            "text" : "Normally, when a parcel is late like this, we send an email informing you of the delay,"
+        },
+        {
+            "id" : 18,
+            "start" : 65.16000366210938,
+            "end" : 70.12000274658203,
+            "text" : "so let me visit the FedEx website and track it."
+        },
+        {
+            "id" : 19,
+            "start" : 70.12000274658203,
+            "end" : 71.12000274658203,
+            "text" : "Thank you, Candice."
+        },
+        {
+            "id" : 20,
+            "start" : 71.12000274658203,
+            "end" : 72.12000274658203,
+            "text" : "That would be appreciated."
+        },
+        {
+            "id" : 21,
+            "start" : 72.12000274658203,
+            "end" : 76.16000366210938,
+            "text" : "I actually haven't tried tracking it on the FedEx website since you already gave me the"
+        },
+        {
+            "id" : 22,
+            "start" : 76.16000366210938,
+            "end" : 81.80000305175781,
+            "text" : "delivery date through email, so yes, please go ahead."
+        },
+        {
+            "id" : 23,
+            "start" : 81.80000305175781,
+            "end" : 89.63999938964844,
+            "text" : "Okay, according to the FedEx note here, your parcel was delivered on the 20th at 10am."
+        },
+        {
+            "id" : 24,
+            "start" : 89.63999938964844,
+            "end" : 91.23999786376953,
+            "text" : "It said that it was left on the front porch."
+        },
+        {
+            "id" : 25,
+            "start" : 91.23999786376953,
+            "end" : 93.4000015258789,
+            "text" : "Have you tried checking your front porch?"
+        },
+        {
+            "id" : 26,
+            "start" : 93.4000015258789,
+            "end" : 94.4000015258789,
+            "text" : "What?"
+        },
+        {
+            "id" : 27,
+            "start" : 94.4000015258789,
+            "end" : 95.4000015258789,
+            "text" : "What?"
+        },
+        {
+            "id" : 28,
+            "start" : 95.4000015258789,
+            "end" : 96.4000015258789,
+            "text" : "What?"
+        },
+        {
+            "id" : 29,
+            "start" : 96.4000015258789,
+            "end" : 97.4000015258789,
+            "text" : "You're kidding, right?"
+        },
+        {
+            "id" : 30,
+            "start" : 97.4000015258789,
+            "end" : 98.4000015258789,
+            "text" : "Okay, okay."
+        },
+        {
+            "id" : 31,
+            "start" : 98.4000015258789,
+            "end" : 101.27999877929688,
+            "text" : "First of all, my apartment has no front porch."
+        },
+        {
+            "id" : 32,
+            "start" : 101.27999877929688,
+            "end" : 106.5999984741211,
+            "text" : "Second, the only way to deliver parcels in a residence is by leaving them to the concierge."
+        },
+        {
+            "id" : 33,
+            "start" : 106.76000213623047,
+            "end" : 113.23999786376953,
+            "text" : "Third, I was at home the whole day on the 20th and no one, literally no one, knocked"
+        },
+        {
+            "id" : 34,
+            "start" : 113.23999786376953,
+            "end" : 117.04000091552734,
+            "text" : "on my door or called my number to notify me of a parcel."
+        },
+        {
+            "id" : 35,
+            "start" : 117.04000091552734,
+            "end" : 121.95999908447266,
+            "text" : "So whatever this FedEx guy is saying, he's lying, okay?"
+        },
+        {
+            "id" : 36,
+            "start" : 121.95999908447266,
+            "end" : 122.95999908447266,
+            "text" : "He's lying."
+        },
+        {
+            "id" : 37,
+            "start" : 122.95999908447266,
+            "end" : 123.95999908447266,
+            "text" : "That's definitely odd."
+        },
+        {
+            "id" : 38,
+            "start" : 123.95999908447266,
+            "end" : 127.68000030517578,
+            "text" : "Have you tried checking with your building's concierge to see if they have kept a package"
+        },
+        {
+            "id" : 39,
+            "start" : 127.68000030517578,
+            "end" : 128.67999267578125,
+            "text" : "for you?"
+        },
+        {
+            "id" : 40,
+            "start" : 128.67999267578125,
+            "end" : 132.9600067138672,
+            "text" : "I just checked this morning and the answer is no, otherwise I wouldn't be calling you."
+        },
+        {
+            "id" : 41,
+            "start" : 132.9600067138672,
+            "end" : 134.36000061035156,
+            "text" : "Yeah."
+        },
+        {
+            "id" : 42,
+            "start" : 134.36000061035156,
+            "end" : 137.47999572753906,
+            "text" : "Your neighbors also wouldn't happen to receive it, right?"
+        },
+        {
+            "id" : 43,
+            "start" : 137.47999572753906,
+            "end" : 140.24000549316406,
+            "text" : "Since as you said, all parcels go to the concierge."
+        },
+        {
+            "id" : 44,
+            "start" : 140.24000549316406,
+            "end" : 141.24000549316406,
+            "text" : "Correct."
+        },
+        {
+            "id" : 45,
+            "start" : 141.24000549316406,
+            "end" : 144.9600067138672,
+            "text" : "And if the note says he left it on my doorstep, again, that's impossible."
+        },
+        {
+            "id" : 46,
+            "start" : 144.9600067138672,
+            "end" : 148.32000732421875,
+            "text" : "No one can access our doorsteps here except us tenants."
+        },
+        {
+            "id" : 47,
+            "start" : 148.32000732421875,
+            "end" : 150.72000122070312,
+            "text" : "So there's clearly a mistake here."
+        },
+        {
+            "id" : 48,
+            "start" : 150.72000122070312,
+            "end" : 153.72000122070312,
+            "text" : "Yes, that makes sense."
+        },
+        {
+            "id" : 49,
+            "start" : 153.72000122070312,
+            "end" : 156.47999572753906,
+            "text" : "So here's what we're going to do, Tabitha."
+        },
+        {
+            "id" : 50,
+            "start" : 156.47999572753906,
+            "end" : 160.67999267578125,
+            "text" : "It is likely that FedEx delivered the order to the wrong address."
+        },
+        {
+            "id" : 51,
+            "start" : 160.67999267578125,
+            "end" : 164.39999389648438,
+            "text" : "So I will file a PDNR claim on your behalf."
+        },
+        {
+            "id" : 52,
+            "start" : 164.39999389648438,
+            "end" : 167.52000427246094,
+            "text" : "It means parcel delivered, not received."
+        },
+        {
+            "id" : 53,
+            "start" : 167.52000427246094,
+            "end" : 171.83999633789062,
+            "text" : "What this does is to let FedEx investigate to find your missing parcel."
+        },
+        {
+            "id" : 54,
+            "start" : 171.83999633789062,
+            "end" : 178.1999969482422,
+            "text" : "And after the investigation, we will either refund, replace, or find your missing parcel."
+        },
+        {
+            "id" : 55,
+            "start" : 178.1999969482422,
+            "end" : 179.1999969482422,
+            "text" : "Okay."
+        },
+        {
+            "id" : 56,
+            "start" : 179.1999969482422,
+            "end" : 180.1999969482422,
+            "text" : "Yeah."
+        },
+        {
+            "id" : 57,
+            "start" : 180.1999969482422,
+            "end" : 183.47999572753906,
+            "text" : "And for me to initiate the claim, I will send you an email right now."
+        },
+        {
+            "id" : 58,
+            "start" : 183.47999572753906,
+            "end" : 189.47999572753906,
+            "text" : "Please reply to that email confirming that you have not received your parcel."
+        },
+        {
+            "id" : 59,
+            "start" : 189.47999572753906,
+            "end" : 194.63999938964844,
+            "text" : "Your response to that email is very important because that will serve as the documentation"
+        },
+        {
+            "id" : 60,
+            "start" : 194.63999938964844,
+            "end" : 198.44000244140625,
+            "text" : "proving to FedEx that you are requesting for us to file a claim on your behalf."
+        },
+        {
+            "id" : 61,
+            "start" : 198.44000244140625,
+            "end" : 199.44000244140625,
+            "text" : "Okay."
+        },
+        {
+            "id" : 62,
+            "start" : 199.44000244140625,
+            "end" : 201.55999755859375,
+            "text" : "Whatever happens, I'm going to get my refund though, right?"
+        },
+        {
+            "id" : 63,
+            "start" : 201.55999755859375,
+            "end" : 202.55999755859375,
+            "text" : "You're right."
+        },
+        {
+            "id" : 64,
+            "start" : 202.55999755859375,
+            "end" : 203.63999938964844,
+            "text" : "Of course."
+        },
+        {
+            "id" : 65,
+            "start" : 203.63999938964844,
+            "end" : 206.27999877929688,
+            "text" : "And the sooner they find your parcel, the better."
+        },
+        {
+            "id" : 66,
+            "start" : 206.27999877929688,
+            "end" : 211.39999389648438,
+            "text" : "By the way, in the event that the parcel isn't recovered, would you prefer a replacement"
+        },
+        {
+            "id" : 67,
+            "start" : 211.39999389648438,
+            "end" : 212.39999389648438,
+            "text" : "or a refund?"
+        },
+        {
+            "id" : 68,
+            "start" : 212.39999389648438,
+            "end" : 213.52000427246094,
+            "text" : "I need a replacement for that."
+        },
+        {
+            "id" : 69,
+            "start" : 213.52000427246094,
+            "end" : 215.52000427246094,
+            "text" : "I don't want a refund."
+        },
+        {
+            "id" : 70,
+            "start" : 215.52000427246094,
+            "end" : 216.52000427246094,
+            "text" : "Okay."
+        },
+        {
+            "id" : 71,
+            "start" : 216.52000427246094,
+            "end" : 219.27999877929688,
+            "text" : "I will make note of that."
+        },
+        {
+            "id" : 72,
+            "start" : 220.0800018310547,
+            "end" : 223.36000061035156,
+            "text" : "And after the investigation, which usually takes five to seven business days, I will"
+        },
+        {
+            "id" : 73,
+            "start" : 223.36000061035156,
+            "end" : 226.9199981689453,
+            "text" : "check with the supplier for its availability."
+        },
+        {
+            "id" : 74,
+            "start" : 226.9199981689453,
+            "end" : 230.32000732421875,
+            "text" : "And then they can process the replacement for you."
+        },
+        {
+            "id" : 75,
+            "start" : 230.32000732421875,
+            "end" : 231.72000122070312,
+            "text" : "Okay."
+        },
+        {
+            "id" : 76,
+            "start" : 231.72000122070312,
+            "end" : 235.52000427246094,
+            "text" : "It's disappointing that this has to happen, but okay, whatever."
+        },
+        {
+            "id" : 77,
+            "start" : 235.52000427246094,
+            "end" : 237.9600067138672,
+            "text" : "At least I don't have to file a dispute."
+        },
+        {
+            "id" : 78,
+            "start" : 237.9600067138672,
+            "end" : 243.32000732421875,
+            "text" : "To be honest, I was already thinking of calling my bank this morning and filing a dispute."
+        },
+        {
+            "id" : 79,
+            "start" : 243.32000732421875,
+            "end" : 244.32000732421875,
+            "text" : "Yes."
+        },
+        {
+            "id" : 80,
+            "start" : 244.47999572753906,
+            "end" : 249.47999572753906,
+            "text" : "This is definitely not the experience that we want you to have, but we will try our best"
+        },
+        {
+            "id" : 81,
+            "start" : 249.47999572753906,
+            "end" : 254.60000610351562,
+            "text" : "to make this as easy as possible for you considering the situation."
+        },
+        {
+            "id" : 82,
+            "start" : 254.60000610351562,
+            "end" : 257.67999267578125,
+            "text" : "I will also keep this case in progress."
+        },
+        {
+            "id" : 83,
+            "start" : 257.67999267578125,
+            "end" : 262.44000244140625,
+            "text" : "So whatever questions you might have during the investigation, you just reply to the same"
+        },
+        {
+            "id" : 84,
+            "start" : 262.44000244140625,
+            "end" : 265.44000244140625,
+            "text" : "email thread and I will be there to answer your questions."
+        },
+        {
+            "id" : 85,
+            "start" : 265.44000244140625,
+            "end" : 268.67999267578125,
+            "text" : "So let me get this straight."
+        },
+        {
+            "id" : 86,
+            "start" : 268.67999267578125,
+            "end" : 270.67999267578125,
+            "text" : "Seven business days for the investigation."
+        },
+        {
+            "id" : 87,
+            "start" : 270.67999267578125,
+            "end" : 273.20001220703125,
+            "text" : "And if it isn't found, you're going to check with the team if it's available."
+        },
+        {
+            "id" : 88,
+            "start" : 273.20001220703125,
+            "end" : 276.6400146484375,
+            "text" : "And if it's available, another seven days to deliver the replacement."
+        },
+        {
+            "id" : 89,
+            "start" : 276.6400146484375,
+            "end" : 279.239990234375,
+            "text" : "Yes, Tabitha, that's correct."
+        },
+        {
+            "id" : 90,
+            "start" : 279.239990234375,
+            "end" : 283.6000061035156,
+            "text" : "But of course, if they find the parcel during the investigation, then you don't need to"
+        },
+        {
+            "id" : 91,
+            "start" : 283.6000061035156,
+            "end" : 285.0,
+            "text" : "wait that long."
+        },
+        {
+            "id" : 92,
+            "start" : 285.0,
+            "end" : 287.2799987792969,
+            "text" : "That's already the maximum time frame."
+        },
+        {
+            "id" : 93,
+            "start" : 287.2799987792969,
+            "end" : 292.1199951171875,
+            "text" : "Yeah, well, I hope they do, but I honestly don't have much hope for it."
+        },
+        {
+            "id" : 94,
+            "start" : 292.1199951171875,
+            "end" : 295.7200012207031,
+            "text" : "But okay, a replacement's fine, I guess."
+        },
+        {
+            "id" : 95,
+            "start" : 295.7200012207031,
+            "end" : 297.20001220703125,
+            "text" : "Okay, yeah."
+        },
+        {
+            "id" : 96,
+            "start" : 297.20001220703125,
+            "end" : 303.1199951171875,
+            "text" : "I cannot guarantee that 100% that they would find your missing parcel, but there have been"
+        },
+        {
+            "id" : 97,
+            "start" : 303.1199951171875,
+            "end" : 307.1199951171875,
+            "text" : "cases in the past when they did find the missing parcel."
+        },
+        {
+            "id" : 98,
+            "start" : 307.1199951171875,
+            "end" : 310.79998779296875,
+            "text" : "I will, of course, update you throughout the process."
+        },
+        {
+            "id" : 99,
+            "start" : 310.79998779296875,
+            "end" : 314.1199951171875,
+            "text" : "Okay, so I guess that's my best option."
+        },
+        {
+            "id" : 100,
+            "start" : 314.1199951171875,
+            "end" : 315.20001220703125,
+            "text" : "What do you need me to do?"
+        },
+        {
+            "id" : 101,
+            "start" : 315.20001220703125,
+            "end" : 318.6000061035156,
+            "text" : "Just reply to your email saying that I didn't receive a parcel?"
+        },
+        {
+            "id" : 102,
+            "start" : 318.6000061035156,
+            "end" : 319.6000061035156,
+            "text" : "That's correct."
+        },
+        {
+            "id" : 103,
+            "start" : 319.6000061035156,
+            "end" : 320.6000061035156,
+            "text" : "I have just sent you the email."
+        },
+        {
+            "id" : 104,
+            "start" : 320.6000061035156,
+            "end" : 322.9200134277344,
+            "text" : "All right, I will reply in five minutes."
+        },
+        {
+            "id" : 105,
+            "start" : 322.9200134277344,
+            "end" : 324.3599853515625,
+            "text" : "I'm going to have my lunch break."
+        },
+        {
+            "id" : 106,
+            "start" : 324.3599853515625,
+            "end" : 325.3599853515625,
+            "text" : "What's your name again?"
+        },
+        {
+            "id" : 107,
+            "start" : 325.3599853515625,
+            "end" : 326.3599853515625,
+            "text" : "Candice."
+        },
+        {
+            "id" : 108,
+            "start" : 326.3599853515625,
+            "end" : 328.44000244140625,
+            "text" : "All right, Candice, thank you so much."
+        },
+        {
+            "id" : 109,
+            "start" : 328.44000244140625,
+            "end" : 329.6000061035156,
+            "text" : "That's all I need for now."
+        },
+        {
+            "id" : 110,
+            "start" : 329.6000061035156,
+            "end" : 330.6000061035156,
+            "text" : "I have to go."
+        },
+        {
+            "id" : 111,
+            "start" : 330.6000061035156,
+            "end" : 331.6000061035156,
+            "text" : "Bye."
+        },
+        {
+            "id" : 112,
+            "start" : 331.6000061035156,
+            "end" : 332.6000061035156,
+            "text" : "Okay, enjoy your lunch, Tabitha."
+        },
+        {
+            "id" : 113,
+            "start" : 332.6000061035156,
+            "end" : 333.6000061035156,
+            "text" : "Thanks for calling Question."
+        },
+        {
+            "id" : 114,
+            "start" : 333.6000061035156,
+            "end" : 334.6000061035156,
+            "text" : "Bye."
+        },
+        {
+            "id" : 115,
+            "start" : 334.6000061035156,
+            "end" : 334.6000061035156,
+            "text" : ""
+        }
+    ],
+    "language" : "english",
+    "duration" : 334.6199951171875
+}
+
+
+DB Structure:
+{
+  projectId
+  blobUrl
+  status
+  txionTime
+  llmTime
+  transcription 
+  txion_analytics - issueDescription, resolutionProvided, overallSentiment
+  timeAnalytics - agentTime, custTime
+  txionLanguage
+  callDuration
+}

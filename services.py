@@ -15,12 +15,14 @@ class Services:
     self.mongodb = MongoDB()
     self.queue = Queue()
     self.local_audio_path_generic = ""
-    self.local_audio_path_wav = "audios/audio.wav"
+    #? Audio Formatter Configs
+    # self.local_audio_path_converted = "audios/audio.wav"
+    self.local_audio_path_converted = "audios/audio.opus"
   
   """
   - Connect to blob storage
   - Save the incoming file in fs
-  - Convert it to .wav format
+  - Convert it to .wav/.opus format
   - Upload it into blob
   - Remove files from fs
   - Generate shareable blob url
@@ -47,16 +49,24 @@ class Services:
     self.local_audio_path_generic = file.filename.replace(" ", "_").replace("/", "_")
     splitted_filename = file.filename.split(".")
     splitted_filename = splitted_filename[0:-1]
-    formatted_filename_for_blob = project_id + "/" + "".join(splitted_filename) + ".wav"
+    #? Audio Formatter Configs
+    # formatted_filename_for_blob = project_id + "/" + "".join(splitted_filename) + ".wav"
+    formatted_filename_for_blob = project_id + "/" + "".join(splitted_filename) + ".opus"
     
     file.save(self.local_audio_path_generic)
     
-    # - Convert it into wav
+    # - Convert it into wav/opus
+    #? Audio Formatter Configs
     def convert_audio_to_wav():
-      command = ["ffmpeg", "-i", self.local_audio_path_generic, self.local_audio_path_wav]
+      command = ["ffmpeg", "-i", self.local_audio_path_generic, self.local_audio_path_converted]
+      subprocess.run(command, check=True)
+    
+    def convert_audio_to_opus():
+      command = ["ffmpeg", "-i", self.local_audio_path_generic, self.local_audio_path_converted]
       subprocess.run(command, check=True)
       
-    convert_audio_to_wav()
+    # convert_audio_to_wav()
+    convert_audio_to_opus()
     
     # - Upload it into blob
     def upload_file_to_container(file_path, blob_name):
@@ -65,11 +75,11 @@ class Services:
         container_client.upload_blob(name=blob_name, data=data)
       print(f"Uploaded {file_path} to {blob_name} in the container {container_name}")
     
-    upload_file_to_container(self.local_audio_path_wav, formatted_filename_for_blob)
+    upload_file_to_container(self.local_audio_path_converted, formatted_filename_for_blob)
     
     # - Remove files from fs
     os.remove(self.local_audio_path_generic)
-    os.remove(self.local_audio_path_wav)
+    os.remove(self.local_audio_path_converted)
     
     # - Generate shareable blob url
     sas_token = generate_blob_sas(
